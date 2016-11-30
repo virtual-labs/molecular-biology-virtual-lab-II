@@ -1,0 +1,12 @@
+chart {
+	display: block;
+	width: 400px;
+	height: 200px;
+}
+#wells {
+	width: 100%;
+}
+#incubate {
+    white-space: inherit;
+    line-height: 25px;
+}

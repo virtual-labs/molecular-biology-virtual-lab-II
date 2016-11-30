@@ -1,0 +1,658 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: d\n"
+"POT-Creation-Date: 2016-11-01 14:16+0530\n"
+"PO-Revision-Date: 2016-11-01 14:18+0530\n"
+"Last-Translator: \n"
+"Language-Team: d\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;gt.gettext\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: view.js:152 view.js:211 view.js:340
+msgid "Ribo A"
+msgstr "रिबो ए"
+
+#: view.js:153 view.js:210 view.js:339
+msgid "Con A"
+msgstr "कॉन ए"
+
+#: view.js:154 view.js:208 view.js:340
+msgid "oval"
+msgstr "ओवल"
+
+#: view.js:155 view.js:209 view.js:339
+msgid "Acon"
+msgstr "अकॉन"
+
+#: view.js:156 view.js:207 view.js:340
+msgid "b-gal"
+msgstr "बी गाल"
+
+#: view.js:161
+msgid "Protein Name"
+msgstr "प्रोजेक्ट नाम"
+
+#: view.js:162
+msgid "Aconitase"
+msgstr "एकांतसे"
+
+#: view.js:163
+msgid "Conconavalin A"
+msgstr "कंकणावलीं ए"
+
+#: view.js:164
+msgid "Glucose Oxidase"
+msgstr "ग्लूकोस ऑक्सीडेस"
+
+#: view.js:165
+msgid "Neuraminidase"
+msgstr "नेउरमिनिडस"
+
+#: view.js:166
+msgid "Phosphorylase b"
+msgstr "फोस्फोरयलसे बी"
+
+#: view.js:167
+msgid "Pyruvate Kinase"
+msgstr "पैरुवाते काइनेज"
+
+#: view.js:168
+msgid "Ribonuclease A"
+msgstr "रिबोन्यूक्लेअसे ए"
+
+#: view.js:169
+msgid "Chymotrypsinogen"
+msgstr "चयमोतरयप्सिनोगें"
+
+#: view.js:170
+msgid "p Hydroxybenzoate"
+msgstr "पी हैड्रॉक्सिबेनज़ॉट"
+
+#: view.js:171
+msgid "Ribonuclease H"
+msgstr "रिबोन्यूक्लेअसे एच"
+
+#: view.js:172
+msgid "beta Galactosidase"
+msgstr "बीटा ग्लाक्टोसीदास"
+
+#: view.js:173
+msgid "Ovalbumin"
+msgstr "ओवल्बुमिन"
+
+#: view.js:174
+msgid "Carbonic Anhydrase"
+msgstr "कार्बनिक अनिद्रासे"
+
+#: view.js:175
+msgid "Triose Phosphate Isomerase"
+msgstr "त्रिओस फॉस्फेट इसोमेरसे "
+
+#: view.js:176
+msgid "Myoglobin"
+msgstr "मायोग्लोबिन"
+
+#: view.js:177
+msgid "Lysozyme"
+msgstr "ल्य्सजयमे"
+
+#: view.js:178
+msgid "Trypsin Inhibitor"
+msgstr "ट्रिप्सिन इन्हीबिटर"
+
+#: view.js:201
+msgid "help1"
+msgstr "सेलेक्ट थे कंसंट्रेशन ड्रोपडावं."
+
+#: view.js:201
+msgid "help2"
+msgstr "मार्क थे मार्कर प्रोटीन चेकबॉक्सेस यू वांट."
+
+#: view.js:201
+msgid "help3"
+msgstr "सेलेक्ट थे सैंपल ऑफ़ द्रोपडौन्स वेल1, वेल2, वेल3, वेल4 एंड वेल5."
+
+#: view.js:201
+msgid "help4"
+msgstr "एडजस्ट थे वोल्टेज उसिंग 'एडजस्ट वोल्टेज' स्लाइडर."
+
+#: view.js:201
+msgid "help5"
+msgstr "स्टार्ट थे सिम्युलेटर उसिंग 'स्टार्ट सिम्युलेटर' बटन."
+
+#: view.js:201
+msgid "help6"
+msgstr "टर्न पावर न उसिंग 'टर्न पावर ऑन' बटन."
+
+#: view.js:201
+msgid "help7"
+msgstr "यू कैन टर्न पावर ऑफ उसिंग 'टर्न पावर ऑफ' बटन."
+
+#: view.js:201
+msgid "help8"
+msgstr "फिर प्रत्येक के प्रोटीन के स्तर में अच्छी तरह से प्राप्त करने के लिए पिछले बटन पर क्लिक करें।"
+
+#: view.js:201
+msgid "help9"
+msgstr "आप 'शो प्रोटीन डेटाबेस' चेकबॉक्स का उपयोग कर डेटाबेस तालिका देख सकते हैं।"
+
+#: view.js:201
+msgid "help10"
+msgstr "आप प्रयोग बटन 'सिम्युलेटर रीसेट' का उपयोग रीसेट कर सकते हैं।"
+
+#: view.js:201
+msgid "Next"
+msgstr "अगला"
+
+#: view.js:201
+msgid "Close"
+msgstr "बंद करे"
+
+#: view.js:202
+msgid "Polyacrylamide Gel Electrophoresis"
+msgstr "पोळ्याकरयलामिदी जेल वैद्युतकणसंचलन"
+
+#: view.js:203
+msgid "Variables"
+msgstr "चर"
+
+#: view.js:204
+msgid "Concentration(%) of Acrylamid"
+msgstr "एकाग्रता एक्रिलामाइड के (%)"
+
+#: view.js:205
+msgid "Select Concentration"
+msgstr "एकाग्रता का चयन"
+
+#: view.js:206
+msgid "Marker Proteins"
+msgstr "मार्कर प्रोटीन"
+
+#: view.js:212 view.js:341
+msgid "BPTI"
+msgstr "BPTI"
+
+#: view.js:213
+msgid "Well 1"
+msgstr "वेल 1"
+
+#: view.js:214
+msgid "Well 2"
+msgstr "वेल 2"
+
+#: view.js:215
+msgid "Well 3"
+msgstr "वेल 3"
+
+#: view.js:216
+msgid "Well 4"
+msgstr "वेल 4"
+
+#: view.js:217
+msgid "Well 5"
+msgstr "वेल 5"
+
+#: view.js:218
+msgid "Select Sample"
+msgstr "नमूने का चयन"
+
+#: view.js:219
+msgid "Adjust Voltage"
+msgstr "वोल्टेज समायोजित"
+
+#: view.js:220
+msgid "Start Simulator"
+msgstr "प्रारंभ सिम्युलेटर"
+
+#: view.js:221
+msgid "Reset Simulator"
+msgstr "रीसेट सिम्युलेटर"
+
+#: view.js:222
+msgid "Turn Power ON"
+msgstr "बारी सत्ता पर"
+
+#: view.js:224
+msgid "Turn Power OFF"
+msgstr "मुड़ें बिजली बंद"
+
+#: view.js:225
+msgid "Incubate in staining and destaining solution"
+msgstr "धुंधला और डेसटाइनिंग समाधान में सेते"
+
+#: view.js:226
+msgid "Show Protein Database"
+msgstr "शो प्रोटीन डेटाबेस"
+
+#: view.js:227
+msgid "Result"
+msgstr "परिणाम"
+
+#: view.js:228
+msgid "copyright"
+msgstr "कॉपीराइट © अमृता विश्वविद्यालय 2009 - 2015"
+
+#: view.js:248
+msgid "Marker"
+msgstr "निशान"
+
+#: view.js:252
+msgid "Sample 1"
+msgstr "नमूना 1"
+
+#: view.js:256
+msgid "Sample 2"
+msgstr "नमूना 2"
+
+#: view.js:260
+msgid "Sample 3"
+msgstr "नमूना 3"
+
+#: view.js:264
+msgid "Sample 4"
+msgstr "नमूना 4"
+
+#: view.js:268
+msgid "Sample 5"
+msgstr "नमूना 5"
+
+#: view.js:339
+msgid "GO"
+msgstr "गो"
+
+#: view.js:339
+msgid "Neur"
+msgstr "नेउर"
+
+#: view.js:339
+msgid "Phos b"
+msgstr "फोस बी"
+
+#: view.js:339
+msgid "Pyr Kin"
+msgstr "पैर किन"
+
+#: view.js:340
+msgid "Chymo"
+msgstr "चयमो"
+
+#: view.js:340
+msgid "Hydrox"
+msgstr "हयड्रोक्स"
+
+#: view.js:340
+msgid "Ribo H"
+msgstr "रिबो एच"
+
+#: view.js:341
+msgid "carb anh"
+msgstr "चर्ब अंह"
+
+#: view.js:341
+msgid "TIM"
+msgstr "टी ऐ म"
+
+#: view.js:341
+msgid "Myo"
+msgstr "मयो"
+
+#: view.js:341
+msgid "Lyso"
+msgstr "लैस"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid "Error in initial Adjustment of the apparatus."
+#~ msgstr "Error in initial Adjustment of the apparatus."
+
+#~ msgid "Okay"
+#~ msgstr "Okay"
+
+#~ msgid "Tangent Galvanometer"
+#~ msgstr "Tangent Galvanometer"
+
+#~ msgid "Number of turns of the coil"
+#~ msgstr "Number of turns of the coil"
+
+#~ msgid "Initial Setup"
+#~ msgstr "Initial Setup"
+
+#~ msgid "Insert Key"
+#~ msgstr "Insert Key"
+
+#~ msgid "Reverse Current"
+#~ msgstr "Reverse Current"
+
+#~ msgid "Radius of the coil "
+#~ msgstr "Radius of the coil "
+
+#~ msgid "Adjust rheostat"
+#~ msgstr "Adjust rheostat"
+
+#~ msgid "Rotate compass box"
+#~ msgstr "Rotate compass "
+
+#~ msgid "Rotate apparatus"
+#~ msgstr "Rotate apparatus"
+
+#~ msgid "cm"
+#~ msgstr "cm"
+
+#~ msgid "Show Result"
+#~ msgstr "Show Result"
+
+#~ msgid "Reset"
+#~ msgstr "Reset"
+
+#~ msgid "Reduction Factor"
+#~ msgstr "Reduction Factor"
+
+#~ msgid "Show Normal"
+#~ msgstr "Show Normal"
+
+#~ msgid "Zoom Compass"
+#~ msgstr "Zoom Compass"
+
+#~ msgid "Remove Key"
+#~ msgstr "Remove Key"
+
+#~ msgid "Horizontal Intensity"
+#~ msgstr "Horizontal Intensity"
+
+#~ msgid "Magnetic Field Along The Axis of A Circular Coil Carrying Current"
+#~ msgstr "Magnetic Field Along The Axis of A Circular Coil Carrying Current"
+
+#~ msgid "Initial Adjustment"
+#~ msgstr "Initial Adjustment"
+
+#~ msgid "Compass box position "
+#~ msgstr "Compass box position "
+
+#~ msgid "Magnetic field at x, B(T)"
+#~ msgstr "Magnetic field at x, B(T)"
+
+#~ msgid "Circular Coil"
+#~ msgstr "Circular Coil"
+
+#~ msgid "Temperature (Y axis) Vs Time (X axis)"
+#~ msgstr "Temperature (Y axis) Vs Time (X axis)"
+
+#~ msgid "Time (in minutes)"
+#~ msgstr "Time (in minutes)"
+
+#~ msgid "Temperature"
+#~ msgstr "Temperature"
+
+#~ msgid "START"
+#~ msgstr "START"
+
+#~ msgid "Start Experiment"
+#~ msgstr "Start Experiment"
+
+#~ msgid "Measurements"
+#~ msgstr "Measurements"
+
+#~ msgid "Thermometer reading:"
+#~ msgstr "Thermometer reading:"
+
+#~ msgid "Show Graph"
+#~ msgstr "Show Graph"
+
+#~ msgid "Brass"
+#~ msgstr "Brass"
+
+#~ msgid "Water"
+#~ msgstr "Water"
+
+#~ msgid "Plot Graph"
+#~ msgstr "Plot Graph"
+
+#~ msgid "Newton's Law of Cooling"
+#~ msgstr "Newton's Law of Cooling"
+
+#~ msgid "Select material:"
+#~ msgstr "Select material:"
+
+#~ msgid "Select liquid:"
+#~ msgstr "Select liquid:"
+
+#~ msgid "Copper"
+#~ msgstr "Copper"
+
+#~ msgid "Aluminium"
+#~ msgstr "Aluminium"
+
+#~ msgid "Silver"
+#~ msgstr "Silver"
+
+#~ msgid "Milk"
+#~ msgstr "Milk"
+
+#~ msgid "Vegetable oil"
+#~ msgstr "Vegetable oil"
+
+#~ msgid "Olive oil"
+#~ msgstr "Olive oil"
+
+#~ msgid "Start Heating"
+#~ msgstr "Start Heating"
+
+#~ msgid "Stop Heating"
+#~ msgstr "Stop Heating"
+
+#~ msgid "STOP"
+#~ msgstr "STOP"
+
+#~ msgid "Stop Plotting"
+#~ msgstr "Stop Plotting"
+
+#~ msgid "Thermometer reading: "
+#~ msgstr "Thermometer reading:"
+
+#~ msgid "Power on"
+#~ msgstr "Power on"
+
+#~ msgid "Emissivity of the test plate:"
+#~ msgstr "Emissivity of the test plate:"
+
+#~ msgid "Iron"
+#~ msgstr "Iron"
+
+#~ msgid "Steel"
+#~ msgstr "Steel"
+
+#~ msgid "Heat Transfer by Radiation"
+#~ msgstr "Heat Transfer by Radiation"
+
+#~ msgid "Choose material:"
+#~ msgstr "Choose material:"
+
+#~ msgid "Diameter of the plates (cm):"
+#~ msgstr "Diameter of the plates (cm):"
+
+#~ msgid "Thickness of the plates (cm):"
+#~ msgstr "Thickness of the plates (cm):"
+
+#~ msgid "Chamber temperature :"
+#~ msgstr "Chamber temperature :"
+
+#~ msgid "Show result"
+#~ msgstr "Show result"
+
+#~ msgid "Solution Controls"
+#~ msgstr "Solution Controls"
+
+#~ msgid "Select Environment"
+#~ msgstr "Select Environment"
+
+#~ msgid "Select type of test"
+#~ msgstr "Select type of test"
+
+#~ msgid "Enter the readings:"
+#~ msgstr "Enter the readings:"
+
+#~ msgid "Gravitational Mass (in g):"
+#~ msgstr "Gravitational Mass (in g):"
+
+#~ msgid "Mass of Object, m(g):"
+#~ msgstr "Mass of Object, m(g):"
+
+#~ msgid "Volume (in ml):"
+#~ msgstr "Volume (in ml):"
+
+#~ msgid "Density (g/cc):"
+#~ msgstr "Density (g/cc):"
+
+#~ msgid "1cubic centimetre=1ml"
+#~ msgstr "1cubic centimetre=1ml"
+
+#~ msgid "Check"
+#~ msgstr "Check"
+
+#~ msgid "Earth (9.8m/s&#178;)"
+#~ msgstr "Earth (9.8m/s&#178;)"
+
+#~ msgid "Moon (1.6m/s&#178;)"
+#~ msgstr "Moon (1.6m/s&#178;)"
+
+#~ msgid "Mercury (3.7m/s&#178;)"
+#~ msgstr "Mercury (3.7m/s&#178;)"
+
+#~ msgid "Find Mass"
+#~ msgstr "Find Mass"
+
+#~ msgid "Find Volume"
+#~ msgstr "Find Volume"
+
+#~ msgid "Determination of Density of Solid"
+#~ msgstr "Determination of Density of Solid"
+
+#~ msgid "SAVE"
+#~ msgstr "SAVE"
+
+#~ msgid "FULLSCREEN"
+#~ msgstr "FULLSCREEN"
+
+#~ msgid "EXIT"
+#~ msgstr "EXIT"
+
+#~ msgid "Developed by CDAC Mumbai & Amrita University <br> Under research grant from department of IT"
+#~ msgstr "Developed by CDAC Mumbai & Amrita University <br> Under research grant from department of IT"
+
+#~ msgid "The mass of the object due to gravity that displayed in the spring balance"
+#~ msgstr "The mass of the object due to gravity that displayed in the spring balance"
+
+#~ msgid "The actual mass of the body calculated using the equation, m = gravitational mass(w) x 9.8 / g(environment)"
+#~ msgstr "The actual mass of the body calculated using the equation, m = gravitational mass(w) x 9.8 / g(environment)"
+
+#~ msgid "Final level of water (with block immersed) - Initial level of water (without block immersed)"
+#~ msgstr "Final level of water (with block immersed) - Initial level of water (without block immersed)"
+
+#~ msgid "Density, D(g/cc) = m/v = mass divided by volume"
+#~ msgstr "Density, D(g/cc) = m/v = mass divided by volume"
+
+#~ msgid "Please enter the values"
+#~ msgstr "Please enter the values"
+
+#~ msgid "Good! Answer is correct"
+#~ msgstr "Good! Answer is correct"
+
+#~ msgid "Try Again!"
+#~ msgstr "Try Again!"
+
+#~ msgid "Cylinder"
+#~ msgstr "Cylinder"
+
+#~ msgid "Lock"
+#~ msgstr "Lock"
+
+#~ msgid "Wood"
+#~ msgstr "Wood"
+
+#~ msgid "Stone"
+#~ msgstr "Stone"
+
+#~ msgid "Bob"
+#~ msgstr "Bob"
+
+#, fuzzy
+#~ msgid "Plants"
+#~ msgstr "Plants"
+
+#, fuzzy
+#~ msgid "Animals"
+#~ msgstr "Animals"
+
+#, fuzzy
+#~ msgid "2 hours"
+#~ msgstr "2 hours"
+
+#, fuzzy
+#~ msgid "Role of Carbon Dioxide During Respiration"
+#~ msgstr "Role of Carbon Dioxide During Respiration"
+
+#~ msgid "Start"
+#~ msgstr "Start"
+
+#, fuzzy
+#~ msgid "Number of grasshoppers:"
+#~ msgstr "Number of grasshoppers:"
+
+#, fuzzy
+#~ msgid "Select the animal:"
+#~ msgstr "Select the animal:"
+
+#, fuzzy
+#~ msgid "Select the indicator:"
+#~ msgstr "Select the indicator:"
+
+#, fuzzy
+#~ msgid "Grasshopper"
+#~ msgstr "Grasshopper"
+
+#, fuzzy
+#~ msgid "Human being"
+#~ msgstr "Human being"
+
+#, fuzzy
+#~ msgid "Lime water"
+#~ msgstr "Lime water"
+
+#~ msgid "Click on the information icon to see the inference."
+#~ msgstr "Click on the information icon to see the inference."
+
+#, fuzzy
+#~ msgid "Number of seeds : 10"
+#~ msgstr "Number of seeds : 10"
+
+#, fuzzy
+#~ msgid "Number of seeds : "
+#~ msgstr "Number of seeds : "
+
+#, fuzzy
+#~ msgid "Number of grasshoppers : "
+#~ msgstr "Number of grasshoppers : "
+
+#, fuzzy
+#~ msgid "Presence of CO<sub>2</sub> in the test tube, turns the blue BTB indicator to green."
+#~ msgstr "Presence of CO<sub>2</sub> in the test tube, turns the blue BTB indicator to green."
+
+#, fuzzy
+#~ msgid "Presence of CO<sub>2</sub> in the test tube, turns limewater milky."
+#~ msgstr "Presence of CO<sub>2</sub> in the test tube, turns limewater milky."
+
+#, fuzzy
+#~ msgid "Level of water in the delivery tube rises up due to the release of CO<sub>2</sub> in the conical flask during the respiration of the grasshoppers."
+#~ msgstr "Level of water in the delivery tube rises up due to the release of CO<sub>2</sub> in the conical flask during the respiration of the grasshoppers."
+
+#, fuzzy
+#~ msgid "Level of water in the delivery tube rises up due to the release of CO<sub>2</sub> in the conical flask during the respiration of the seeds."
+#~ msgstr "Level of water in the delivery tube rises up due to the release of CO<sub>2</sub> in the conical flask during the respiration of the seeds."

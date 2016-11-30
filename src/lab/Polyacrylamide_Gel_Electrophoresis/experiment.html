@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel='stylesheet' href='../template/assets/css/fonts.googleapis.css'>
+    <link rel="stylesheet" href="../template/bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="../template/assets/css/app.css"/>
+    <link rel="stylesheet" href="css/experiment.css"/>
+    <script src="../template/js/createjs-2015.05.21.min.js"></script>
+    <script src="../template/js/easeljs-0.7.0.min.js"></script>       
+    <script src="../template/bower_components/angular/angular.min.js"></script>
+    <script src="../template/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../template/bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../template/bower_components/angular-fullscreen/angular-fullscreen.js"></script>
+    <script src="../template/js/Gettext.js"></script>  
+    <script type="text/javascript" src="../template/bower_components/angular-material/angular-material.js"></script>
+    <script src="../template/js/getlanguage.js"></script>
+    <script src="./src/user_controller.js"></script>
+    <script src="./src/view.js"></script>
+    <script src="./src/experiment.js"></script>
+    <script type="text/javascript">
+        angular
+        .module('starterApp', ['ngMaterial','users'])
+        .config(function($mdThemingProvider, $mdIconProvider){
+            $mdIconProvider
+                .icon("menu"       , "../template/assets/svg/menu.svg"        , 24)
+                .icon("fullscreen"       , "../template/assets/icons/Icon3.svg", 24)
+                .icon("help"      , "../template/assets/icons/Icon2.svg", 24);
+                $mdThemingProvider.theme('default')
+                    .primaryPalette('blue')
+                    .accentPalette('red');
+        });
+    </script>
+</head>
+
+<body style="background-color: #f2f2f2;" ng-app="starterApp" ng-controller="UserController as ul">
+<md-toolbar class="md-toolbar-tools" id="main">
+  <md-button class="md-icon-button" hide-gt-md ng-click="ul.toggleList()" aria-label="Show User List">
+    <md-icon md-svg-icon="menu" ></md-icon>
+  </md-button>
+    <!-- //Experiment title gives here//   -->
+  <h1 flex="" layout="row" class="expTitle" id="expTitle">{{heading}}</h1>
+  <md-button class="md-icon-button" aria-label="help" ng-click="showActionToast()">
+    <md-icon md-svg-icon="help"></md-icon>
+  </md-button>
+  <md-button class="md-icon-button" aria-label="fullscreen" ng-click="goFullscreen()">
+    <md-icon md-svg-icon="fullscreen"></md-icon>
+  </md-button>
+</md-toolbar>
+<md-content flex layout="row" style="background-color: #f2f2f2;">
+  <md-content  id="content" layout="column"  style="background-color: #f2f2f2;" md-swipe-right="toggleSidenav()">    
+    <canvas id="demoCanvas" width="700" height="700" align="center" layout-fill experiment></canvas>
+    <div id="Copyright">{{copyright}}</div>    
+    </md-content>
+    <md-sidenav class="site-sidenav md-sidenav-left" md-component-id="right" md-is-locked-open="$mdMedia('gt-md')" md-swipe-left="toggleSidenav()">
+     
+    <div>  
+    <md-button id="variables" class="md-raised md-primary toolbarbutton subTitle" ng-click="toggle1()">{{variables}} <span aria-hidden="true">
+    <md-icon md-svg-src="md-toggle-arrow"  aria-hidden="true" ng-animate="{enter: 'rotate', leave: 'rotateCounterwise'}" ng-class="{true: 'rotate', false: 'rotateCounterwise'}[isActive1]" ></md-icon>
+    </span> </md-button>      
+      
+      <div ng-hide="showVariables" class="div">         
+        
+        <!-- Insert dropdown label -->
+        <md-content id="selectConcentration" class="md-title selectable" layout-padding>{{concentration_txt}}</md-content>
+        <!-- Insert dropdown box -->
+        <md-select ng-disabled="concentration_disable" placeholder="{{concentration}}" ng-model="Concentration" ng-change="concentrationAcrylamid();">
+            <md-option class="md-title selectable" ng-model="Concentration" ng-repeat="x in concentration_array" value="{{ x.type }}">{{ x.concentration }}</md-option>
+        </md-select>
+
+        <!-- Insert checkbox label -->
+        <md-content id="markerProteins" class="md-title selectable" layout-padding>{{marker_proteins_txt}}</md-content>
+        <table id="proteins">
+            <tr>
+                <td>
+                    <!-- Insert checkbox1 -->
+                    <md-checkbox ng-disabled="proteins_disable" class="md-title selectable" ng-model="b_gal" aria-label="Checkbox1" ng-change="bgalChange()">{{b_gal_txt}}</md-checkbox>
+                </td>
+                <td>
+                    <!-- Insert checkbox2 -->
+                    <md-checkbox ng-disabled="proteins_disable" class="md-title selectable" ng-model="oval" aria-label="Checkbox2" ng-change="ovalChange()">{{oval_txt}}</md-checkbox>
+                </td>
+                <td>
+                    <!-- Insert checkbox3 -->
+                    <md-checkbox ng-disabled="proteins_disable" class="md-title selectable" ng-model="acon" aria-label="Checkbox3" ng-change="aconChange()">{{acon_txt}}</md-checkbox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Insert checkbox1 -->
+                    <md-checkbox ng-disabled="proteins_disable" class="md-title selectable" ng-model="con_a" aria-label="Checkbox4" ng-change="conAChange()">{{con_a_txt}}</md-checkbox>
+                </td>
+                <td>
+                    <!-- Insert checkbox2 -->
+                    <md-checkbox ng-disabled="proteins_disable" class="md-title selectable" ng-model="ribo_a" aria-label="Checkbox5" ng-change="riboAChange()">{{ribo_a_txt}}</md-checkbox>
+                </td>
+                <td>
+                    <!-- Insert checkbox3 -->
+                    <md-checkbox ng-disabled="proteins_disable" class="md-title selectable" ng-model="bpti" aria-label="Checkbox6" ng-change="bptiChange()">{{bpti_txt}}</md-checkbox>
+                </td>
+            </tr>
+        </table>
+
+        <table id="wells">
+            <tr>
+                <td>
+                    <!-- Insert dropdown label -->
+                    <md-content id="well1" class="md-title selectable" layout-padding>{{well1_txt}}</md-content>
+                </td>
+                <td>
+                    <!-- Insert dropdown box -->
+                    <md-select ng-disabled="wells_disable" id="well" placeholder="{{well}}" ng-model="well1" ng-change="changeWell1();">
+                        <md-option class="md-title selectable" ng-model="well1" ng-repeat="x in well_array" value="{{ x.type }}">{{ x.well }}</md-option>
+                    </md-select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Insert dropdown label -->
+                    <md-content id="well1" class="md-title selectable" layout-padding>{{well2_txt}}</md-content>
+                </td>
+                <td>
+                    <!-- Insert dropdown box -->
+                    <md-select ng-disabled="wells_disable" id="
+                    well" placeholder="{{well}}" ng-model="well2" ng-change="changeWell2();">
+                        <md-option class="md-title selectable" ng-model="well2" ng-repeat="x in well_array" value="{{ x.type }}">{{ x.well }}</md-option>
+                    </md-select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Insert dropdown label -->
+                    <md-content id="well1" class="md-title selectable" layout-padding>{{well3_txt}}</md-content>
+                </td>
+                <td>
+                    <!-- Insert dropdown box -->
+                    <md-select ng-disabled="wells_disable" id="well" placeholder="{{well}}" ng-model="well3" ng-change="changeWell3();">
+                        <md-option class="md-title selectable" ng-model="well3" ng-repeat="x in well_array" value="{{ x.type }}">{{ x.well }}</md-option>
+                    </md-select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Insert dropdown label -->
+                    <md-content id="well1" class="md-title selectable" layout-padding>{{well4_txt}}</md-content>
+                </td>
+                <td>
+                    <!-- Insert dropdown box -->
+                    <md-select ng-disabled="wells_disable" id="well" placeholder="{{well}}" ng-model="well4" ng-change="changeWell4();">
+                        <md-option class="md-title selectable" ng-model="well4" ng-repeat="x in well_array" value="{{ x.type }}">{{ x.well }}</md-option>
+                    </md-select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Insert dropdown label -->
+                    <md-content id="well1" class="md-title selectable" layout-padding>{{well5_txt}}</md-content>
+                </td>
+                <td>
+                    <!-- Insert dropdown box -->
+                    <md-select ng-disabled="wells_disable" id="well" placeholder="{{well}}" ng-model="well5" ng-change="changeWell5();">
+                        <md-option class="md-title selectable" ng-model="well5" ng-repeat="x in well_array" value="{{ x.type }}">{{ x.well }}</md-option>
+                    </md-select>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Insert slider1 label -->
+        <md-content class="md-title selectable" ng-model="voltage" layout-padding id="voltage">{{voltage_txt}} {{voltage}}</md-content>
+        <!-- Insert slider1 -->
+        <div layout>      
+            <md-slider flex md-discrete ng-disabled="voltage_disable" ng-change="changeVoltage()" ng-model="voltage" step="50" min="0" max="200" aria-label="rating"></md-slider>        
+        </div>
+
+        <!-- // Inset button1 //   -->
+        <section layout="row" layout-align="center center">
+          <md-button ng-disabled="start_disable" class="md-raised" id="startBtn" ng-click="startSimulator();">{{start_btn_txt}}</md-button>
+        </section>
+        
+        <!-- // Inset button2 //   -->
+        <section layout="row" layout-align="center center">
+          <md-button ng-disabled="power_on_disable" class="md-raised" id="power_on" ng-click="turnPowerOn();">{{power_on_btn_txt}}</md-button>
+        </section>
+        
+        <!-- // Inset button3 //   -->
+        <section layout="row" layout-align="center center">
+          <md-button ng-disabled="incubate_disable" class="md-raised" id="incubate" ng-click="incubateStaining();">{{incubate_btn_txt}}</md-button>
+        </section>
+        
+        <!-- Insert checkbox -->
+        <md-checkbox ng-disabled="database_disable" class="md-title selectable" ng-model="proteins_database" aria-label="Checkbox1" ng-change="showProteinsDatabase()">{{proteins_database_txt}}</md-checkbox>
+      </div>      
+      <!-- ////////////   -->
+      
+      <md-button id="result" class="md-raised md-primary toolbarbutton subTitle" ng-click="toggle()">{{result}} <span aria-hidden="true">
+        <md-icon md-svg-src="md-toggle-arrow"   aria-hidden="true" ng-animate="{enter: 'rotate', leave: 'rotateCounterwise'}" ng-class="{true: 'rotate', false: 'rotateCounterwise'}[isActive]" ></md-icon>
+        </span> </md-button>
+        
+         <!-- //inset result label //   -->       
+        <div ng-hide="showValue" class="div">           
+        </div>
+    </div>
+  </md-sidenav>
+</md-content>
+</body>
+<script src="../template/js/loading.js"></script>
+</html>
