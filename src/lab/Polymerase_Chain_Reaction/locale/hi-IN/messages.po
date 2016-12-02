@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: d\n"
 "POT-Creation-Date: 2016-11-14 15:34+0530\n"
-"PO-Revision-Date: 2016-11-25 08:34+0530\n"
+"PO-Revision-Date: 2016-12-02 10:43+0530\n"
 "Last-Translator: \n"
 "Language-Team: d\n"
 "Language: hi\n"
@@ -73,7 +73,7 @@ msgstr "प्रारंभिक प्रतिलिपि संख्य�
 
 #: view.js:57
 msgid "Reset"
-msgstr "Reset"
+msgstr "रीसेट"
 
 #: view.js:58
 msgid "Result"
